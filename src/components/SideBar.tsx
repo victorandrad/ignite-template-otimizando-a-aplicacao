@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { Button } from "./Button";
 
 interface SideBarProps {
@@ -7,7 +8,7 @@ interface SideBarProps {
     title: string;
   }>;
   selectedGenreId: number;
-  buttonClickCallback: (args: any) => void;
+  buttonClickCallback: (id: number) => void;
 }
 
 export function SideBar({
